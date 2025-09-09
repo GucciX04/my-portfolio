@@ -11,8 +11,11 @@ export default function About() {
             I’m a beginner web developer learning React and Tailwind CSS. I
             enjoy creating clean and simple designs, and I’m building this
             portfolio to showcase my journey.
+            
           </p>
         </div>
+        
       </section>
+      
   )
 }

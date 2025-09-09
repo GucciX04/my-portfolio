@@ -21,6 +21,7 @@ export default function App() {
       <Contacts />
       {/* Footer */}
       <Footer />
+      
     </div>
   );
 }
