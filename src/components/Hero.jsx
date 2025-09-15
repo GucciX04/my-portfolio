@@ -1,6 +1,7 @@
 import React from "react";
 import roi from "../assets/roi.jpg";
 import whiteLines2 from "../assets/whiteLines2.png";
+import whitelines from "../assets/whiteLinesEnhancce.png";
 
 export default function Hero() {
   return (
@@ -8,7 +9,7 @@ export default function Hero() {
       id="hero"
       className="flex flex-col md:flex-row items-center justify-between h-[100vh] px-6"
       style={{
-        backgroundImage: `url(${whiteLines2})`,
+        backgroundImage: `url(${whitelines})`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "100% 100%",
@@ -16,18 +17,25 @@ export default function Hero() {
     >
       {/* Left: Text */}
       <div className="md:w-1/2 text-left">
-        <h2 className="font-extrabold text-gray-900 mb-4 ml-20 text-6xl">
-          Hi, There 👋
+        <h2
+          className="font-extrabold text-gray-900 mb-4 ml-20 text-6xl"
+          style={{ color: "#393E46" }}
+        >
+          Hello👋
         </h2>
-        <h2 className="text-9xl font-extrabold text-gray-900 mb-4 ml-20">
-          I am <span className="text-purple-600">Roi Ballesteros </span>
+        <h2 className="text-9xl font-extrabold text-gray-900 mb-4 ml-20" style={{ color: "#393E46" }}>
+          I am{" "}
+          <span className="text-purple-600 u" style={{ color: "#222831" }}>
+            Roi Ballesteros{" "}
+          </span>
         </h2>
         <p className="text-lg text-gray-600 mb-6 ml-20">
           A passionate developer who loves building web apps with React and
           Tailwind CSS.
         </p>
         <button
-          className="ml-20 hover:cursor-pointer px-6 py-3 bg-purple-600 text-white rounded-full shadow-md hover:bg-purple-700 transition font-bold"
+          className="ml-20 hover:cursor-pointer px-6 py-3 text-white rounded-full shadow-md transition font-bold"
+          style={{ color: "#DFD0B8", backgroundColor: "#222831", }}
           onClick={() => {
             document
               .getElementById("projects")
@@ -43,7 +51,7 @@ export default function Hero() {
         <img
           src={roi}
           alt="Roi"
-          className="w-135 h-135 rounded-full object-cover shadow-lg"
+          className="w-150 h-150 rounded-full object-cover shadow-lg"
         />
       </div>
     </section>

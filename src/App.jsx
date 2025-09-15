@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contacts from "./components/Contacts";
 
+
 export default function App() {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -21,6 +22,7 @@ export default function App() {
       <Contacts />
       {/* Footer */}
       <Footer />
+      
       
     </div>
   );

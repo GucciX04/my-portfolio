@@ -12,7 +12,7 @@ export default function Navbar() {
           alt=""
           className="w-10 h-10 rounded-full mr-1 object-cover"
         />
-        <h1 className="text-3xl font-bold text-purple-600">Gussi</h1>
+        <h1 className="text-3xl font-bold" style={{color: "#393E46"}}>Gussi</h1>
       </div>
       <ul className="flex space-x-6 text-gray-700 font-medium">
         <li>
