@@ -19,7 +19,7 @@ export default function App() {
       {/* Projects Section */}
       <Projects />
       {/* Contact Section */}
-      <Contacts />
+      
       {/* Footer */}
       <Footer />
       

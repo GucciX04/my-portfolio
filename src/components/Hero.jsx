@@ -2,7 +2,10 @@ import React from "react";
 import roi from "../assets/roi.jpg";
 import whiteLines2 from "../assets/whiteLines2.png";
 import whitelines from "../assets/whiteLinesEnhancce.png";
-
+import fb from "../assets/fb.png"
+import github from "../assets/github.png"
+import gmail from "../assets/gmail.webp"
+import telegram from "../assets/telegram.webp"
 export default function Hero() {
   return (
     <section
@@ -21,21 +24,45 @@ export default function Hero() {
           className="font-extrabold text-gray-900 mb-4 ml-20 text-6xl"
           style={{ color: "#393E46" }}
         >
-          Hello👋
+          Hello I'm👋
         </h2>
-        <h2 className="text-9xl font-extrabold text-gray-900 mb-4 ml-20" style={{ color: "#393E46" }}>
-          I am{" "}
-          <span className="text-purple-600 u" style={{ color: "#222831" }}>
+        <h2
+          className="text-9xl font-extrabold text-gray-900 mb-4 ml-20"
+          style={{ color: "#393E46" }}
+        >
+          <span className style={{ color: "#000000" }}>
             Roi Ballesteros{" "}
           </span>
         </h2>
-        <p className="text-lg text-gray-600 mb-6 ml-20">
+        <p className="text-2xl text-gray-600 mb-6 ml-20">
           A passionate developer who loves building web apps with React and
           Tailwind CSS.
         </p>
+        <div className="flex ml-20 gap-5 mb-4">
+          <img
+            src={fb}
+            alt="fb"
+            className="w-15 h-15 rounded-full object-cover shadow-lg"
+          />
+          <img
+            src={gmail}
+            alt="Roi"
+            className="w-15 h-15 rounded-full object-cover shadow-lg"
+          />
+          <img
+            src={github}
+            alt="Roi"
+            className="w-15 h-15 rounded-full object-cover shadow-lg"
+          />
+          <img
+            src={telegram}
+            alt="Roi"
+            className="w-15 h-15 rounded-full object-cover shadow-lg"
+          />
+        </div>
         <button
-          className="ml-20 hover:cursor-pointer px-6 py-3 text-white rounded-full shadow-md transition font-bold"
-          style={{ color: "#DFD0B8", backgroundColor: "#222831", }}
+          className="mt-5 w-55 h-15 ml-20 hover:cursor-pointer px-6 py-3 text-gray rounded-full shadow-md transition font-bold"
+          style={{ color: "#DFD0B8", backgroundColor: "#222831" }}
           onClick={() => {
             document
               .getElementById("projects")
@@ -51,9 +78,11 @@ export default function Hero() {
         <img
           src={roi}
           alt="Roi"
-          className="w-150 h-150 rounded-full object-cover shadow-lg"
+          className="w-200 h-200 rounded-full object-cover shadow-lg"
         />
+        
       </div>
+      
     </section>
   );
 }
