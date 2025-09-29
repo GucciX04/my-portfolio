@@ -1,13 +1,9 @@
 import React from "react";
 import Card from "./Card";
-import roi from "../assets/roi.jpg";
-import discaya from "../assets/discaya.webp";
-import jinggoy from "../assets/jinggoy.webp";
-import joel from "../assets/joel.webp";
-import bitoy from "../assets/bitoy.jpeg";
 import memoryGame from "../assets/memoryGame.png";
 import safehub from "../assets/safehub.png"
 import game from "../assets/game.png"
+
 export default function Projects() {
   const projects = [
     {
@@ -33,21 +29,18 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 bg-gray-50 border-2 border-gray-300 rounded-lg"
+      className="py-20 bg-gray-50 border-2 border-gray-300 rounded-lg min-h-screen"
     >
-      <h2 className="text-5xl font-bold text-center text-gray-900 mb-20">
-        My Projects
+      <h2 className="text-7xl font-bold text-center text-gray-900 mb-20">
+        My <span className="text-blue-700">Projects</span>
       </h2>
 
-      {/* Container with margin */}
       <div className="max-w-8xl mx-auto overflow-hidden relative">
         <div className="flex animate-scroll gap-6 w-max">
-          {/* Duplicate cards set twice for infinite loop */}
           {Array.from({ length: 2 }).map((_, i) =>
-            projects.map((project, index) => (
+            projects.map((project) => (
               <Card
-                
-                {...project} // spread operator = passes all props (title, description, etc.)
+                {...project} //to pass all the props 
               />
             ))
           )}

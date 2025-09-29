@@ -5,7 +5,7 @@ function Card({ title, description, image, buttonText }) {
 
   return (
     <div className="-screen justify-center items-center">
-      <div className="mt-card bg-base-100 w-250 shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-gray-900 rounder-lg">
+      <div className="mt-card bg-base-100 w-250 shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-blue-900 rounder-lg">
         <figure>
           <img
             src={image}
@@ -14,15 +14,13 @@ function Card({ title, description, image, buttonText }) {
           />
         </figure>
         <div className="card-body">
-          <h1 className="card-title font-bold" style={{ fontSize: "30px" }}>
+          <h1 className="card-title font-bold" style={{ fontSize: "35px" }}>
             {title}
           </h1>
-          <p className="font-" style={{ fontSize: "20px" }}>
-            {description}
-          </p>
+          <p style={{ fontSize: "25px" }}>{description}</p>
           <div className="card-actions justify-end ">
             <button
-              className="btn w-40 rounded-3xl "
+              className="btn h-15 w-40 rounded-3xl "
               style={{
                 color: "#DFD0B8",
                 backgroundColor: isHovered ? "#0074D9" : "#222831",
@@ -31,7 +29,7 @@ function Card({ title, description, image, buttonText }) {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              {buttonText}
+              <p style={{ fontSize: "15px" }}>{buttonText}</p>
             </button>
           </div>
         </div>
