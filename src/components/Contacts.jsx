@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import QuoteWidget from "./QuoteWidget";
 import {
   faEnvelope,
   faLocationDot,
@@ -41,8 +42,8 @@ export default function Contact() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-purple-100">
-      <h1 className="text-center text-5xl md:text-7xl font-extrabold mb-12 text-black-700 drop-shadow">
+    <section className="py-16 bg-gradient-to-br from-white via-blue-100 to-blue-400 " id="contact">
+      <h1 className="text-center text-5xl md:text-7xl font-extrabold mb-12 text-black-700 drop-shadow tracking-tight">
         Get in <span className=" text-blue-700">Touch</span>
       </h1>
       <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center mx-4 md:mx-16 lg:mx-32">
@@ -107,6 +108,13 @@ export default function Contact() {
             </button>
           </form>
         </div>
+        <div>
+          
+        </div>
+        
+      </div>
+       <div className="mt-10 flex justify-center">
+        <QuoteWidget />
       </div>
     </section>
   );

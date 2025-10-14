@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contacts from "./components/Contacts";
+import QuoteWidget from "./components/QuoteWidget";
 
 
 export default function App() {
@@ -21,7 +22,9 @@ export default function App() {
       {/* Contact Section */}
       <Contacts />
       {/* Footer */}
+    
       <Footer />
+      
       
       
     </div>

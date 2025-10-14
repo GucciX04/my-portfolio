@@ -2,10 +2,12 @@ import roi from "../assets/roi.jpg";
 import whiteLines2 from "../assets/whiteLines2.png";
 import whitelines from "../assets/whiteLinesEnhancce.png";
 import fb from "../assets/fb.png";
+import meme from "/meme.png";
 import github from "../assets/github.png";
 import gmail from "../assets/gmail.webp";
 import telegram from "../assets/telegram.webp";
-
+import QuoteWidget from "./QuoteWidget";
+import maezy from "../assets/fefef.png";
 import React, { useState } from "react";
 
 export default function Hero() {
@@ -13,8 +15,10 @@ export default function Hero() {
 
   return (
     <section
+    
       id="hero"
-      className="flex flex-col md:flex-row items-center justify-between min-h-screen px-4 md:px-8"
+      className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-4 md:px-8
+        before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/80 before:to-blue-400/60 before:z-0"
       style={{
         backgroundImage: `url(${whitelines})`,
         backgroundRepeat: "no-repeat",
@@ -23,12 +27,12 @@ export default function Hero() {
       }}
     >
       {/* Left: Text */}
-      <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start mx-20">
+      <div className="relative z-10 w-full md:w-1/2 text-center md:text-left flex flex-col mt-20 items-center md:items-start mx-20">
         <h2
           className="font-extrabold mb-2 md:mb-4 text-3xl sm:text-4xl md:text-6xl"
           style={{ color: "#393E46" }}
         >
-          Hello I'm👋
+          Hello👋 I'm
         </h2>
         <h2
           className="font-extrabold mb-2 md:mb-4 text-5xl sm:text-7xl md:text-9xl"
@@ -79,14 +83,16 @@ export default function Hero() {
         >
           View My Projects
         </button>
+        
       </div>
+      
 
       {/* Right: Image */}
-      <div className="w-full  md:w-1/2 flex justify-center mt-8 md:mt-50">
+      <div className="relative z-10 w-full md:w-1/2 flex justify-center mt-20">
         <img
-          src={roi}
+          src={meme}
           alt="Roi"
-          className="w-64 h-64 sm:w-200 sm:h-200 md:w-200 md:h-200 rounded-full object-cover shadow-lg"
+          className="w-150 h-150 rounded-full object-cover shadow-lg"
         />
       </div>
     </section>

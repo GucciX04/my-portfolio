@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "./Card";
 import memoryGame from "../assets/memoryGame.png";
-import safehub from "../assets/safehub.png"
-import game from "../assets/game.png"
-
+import safehub from "../assets/safehub.png";
+import game from "../assets/game.png";
+import maezy from "../assets/fefef.png";
 export default function Projects() {
   const projects = [
     {
@@ -14,7 +14,8 @@ export default function Projects() {
     },
     {
       title: "Safehub",
-      description: "Mental Health AI chatbot with online counselling for La Consolacion University",
+      description:
+        "Mental Health AI chatbot with online counselling for La Consolacion University",
       image: safehub,
       buttonText: "Explore",
     },
@@ -24,28 +25,29 @@ export default function Projects() {
       image: game,
       buttonText: "Explore",
     },
+
+    
   ];
 
   return (
     <section
       id="projects"
-      className="py-20 bg-gray-50 border-2 border-gray-300 rounded-lg min-h-screen"
+      className="py-20 bg-gray-50 border-2 border-gray-300 rounded-lg min-h-screen bg-gradient-to-br from-blue-500 via-blue-100 to-white "
     >
-      <h2 className="text-7xl font-bold text-center text-gray-900 mb-20">
+      <h2 className="text-7xl  text-gray-900 sm:text-6xl font-extrabold text-center mb-12 tracking-tight">
         My <span className="text-blue-700">Projects</span>
       </h2>
 
       <div className="max-w-8xl mx-auto overflow-hidden relative">
         <div className="flex animate-scroll gap-6 w-max">
           {Array.from({ length: 2 }).map((_, i) =>
-            projects.map((project) => (
-              <Card
-                {...project} //to pass all the props 
-              />
+            projects.map((project, index) => (
+              <Card key={`${i}-${index}`} {...project} />
             ))
           )}
         </div>
       </div>
+      
     </section>
   );
 }

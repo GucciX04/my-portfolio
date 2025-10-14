@@ -5,7 +5,7 @@ function CardEducation({ school, institution, period }) {
     <div className="mb-6">
       <div className="space-y-4">
         <div
-          className="bg-white p-4 rounded-xl shadow-md border-l-4"
+          className="bg-blue-50 p-4 rounded-xl shadow-md border-l-4"
           style={{ borderLeftColor: "#222831" }}
         >
           <h3 className="font-semibold text-2xl" style={{ color: "#222831" }}>
