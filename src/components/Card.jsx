@@ -8,7 +8,7 @@ function Card({ title, description, image, buttonText }) {
       <div className="border-2 border-gray-blue-900 rounded-lg ">
         <figure>
           <img
-            src={image}
+            src={isHovered ? "https://raw.githubusercontent.com/AetherKnowledge/React-Tutorial-3-State/refs/heads/main/public/pirate.jpg" : image}
             alt={title}
             className="h-150 w-full object-cover rounded-t-lg"
           />

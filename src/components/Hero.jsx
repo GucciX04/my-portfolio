@@ -1,13 +1,9 @@
 import roi from "../assets/roi.jpg";
-import whiteLines2 from "../assets/whiteLines2.png";
 import whitelines from "../assets/whiteLinesEnhancce.png";
 import fb from "../assets/fb.png";
-import meme from "/meme.png";
 import github from "../assets/github.png";
 import gmail from "../assets/gmail.webp";
 import telegram from "../assets/telegram.webp";
-import QuoteWidget from "./QuoteWidget";
-import maezy from "../assets/fefef.png";
 import React, { useState } from "react";
 
 export default function Hero() {
@@ -15,7 +11,6 @@ export default function Hero() {
 
   return (
     <section
-    
       id="hero"
       className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-4 md:px-8
         before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/80 before:to-blue-400/60 before:z-0"
@@ -83,14 +78,12 @@ export default function Hero() {
         >
           View My Projects
         </button>
-        
       </div>
-      
 
       {/* Right: Image */}
       <div className="relative z-10 w-full md:w-1/2 flex justify-center mt-20">
         <img
-          src={meme}
+          src={roi}
           alt="Roi"
           className="w-150 h-150 rounded-full object-cover shadow-lg"
         />
